@@ -126,53 +126,35 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+              <span class="link-block">
+                <a href="https://openreview.net/pdf?id=26wkb05i8h"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+              </span>
+              <!-- Code Link. TODO: replace href with the real repository URL. -->
+              <span class="link-block">
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
-                  </a>
-              </span> -->
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                </a>
+              </span>
+              <!-- Docs Link. TODO: replace href with the real documentation URL. -->
+              <span class="link-block">
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="fas fa-book"></i>
                   </span>
-                  <span>Data</span>
-                  </a> -->
+                  <span>Docs</span>
+                </a>
+              </span>
             </div>
 
           </div>
@@ -185,8 +167,8 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/imvr-sim.mov"
+      <video id="teaser" autoplay muted loop playsinline preload="auto" height="100%">
+        <source src="./static/videos/imvr-sim.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -199,123 +181,271 @@
 </section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-open-box">
-          <video poster="" id="open-box" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/open_box.mov"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-pour">
-          <video poster="" id="pour" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pour.mov"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-rotate">
-          <video poster="" id="rotate" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/rotate.mov"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!-- <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!-- <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!-- <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        
-        <div class="item item-pick-and-insert"> 
-          <video poster="" id="pick-and-insert" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pick-and-insert.mov"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-pick-cube">
-          <video poster="" id="pick-cube" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pick-cube.mov"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+<!-- Abstract. -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present <em>ImVR</em>, an immersive VR-based teleoperation system that places the operator in a fully 3D virtual environment for intuitive and precise robot control. 
-            Designed for general-purpose use, <em>ImVR</em> supports a wide range of robot configurations—including single- and dual-arm setups, parallel grippers and multi-fingered dexterous hands—while operating seamlessly in both simulation and the real world. 
-            It ensures absolute alignment between the operator’s hand and the robot’s end-effector, offers adaptive viewpoints to enhance situational awareness and precision, and enables easy deployment across diverse robotic platforms. 
+            We present <em>ImVR</em>, an immersive VR-based teleoperation system that places the operator in a fully 3D virtual environment for intuitive and precise robot control.
+            Designed for general-purpose use, <em>ImVR</em> supports a wide range of robot configurations—including single- and dual-arm setups, parallel grippers and multi-fingered dexterous hands—while operating seamlessly in both simulation and the real world.
+            It ensures absolute alignment between the operator’s hand and the robot’s end-effector, offers adaptive viewpoints to enhance situational awareness and precision, and enables easy deployment across diverse robotic platforms.
             Experiments and user studies highlight <em>ImVR</em>’s versatility, ease of use, and effectiveness in accelerating data collection, making it a powerful tool for large-scale robot learning and real-world manipulation tasks.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+
+<!-- Immersive View. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h2 class="title is-3">Placing the Human in a 3D Virtual World</h2>
+        <div class="content has-text-justified">
+          <p>
+            A key feature of <em>ImVR</em> is that it places the operator
+            <em>directly</em> inside a fully rendered 3D virtual world, rather than behind the 2D video
+            overlays used by prior see-through mixed-reality systems. This gives the operator direct and
+            complete access to the scene's spatial information: stereoscopic 4K video at 60 Hz, real-time
+            head tracking, and natural parallax together restore the depth cues humans rely on for
+            dexterous manipulation. Adaptive viewpoints let the operator smoothly shift between a wide
+            situational overview and a close-up on the end-effector, which is essential for tasks that
+            demand precise alignment or rich contact.
+          </p>
+          <p>
+            Following the principle of <em>“where your hand is, where the end-effector is,”</em> the
+            system maintains absolute alignment between the operator's hand and the robot's end-effector,
+            so visual feedback stays tightly coupled to hand motion and the operator needs no
+            compensatory motion. The video below illustrates this with two synchronized views from a
+            single teleoperation session: on the <strong>left</strong>, the operator's immersive
+            first-person view inside the 3D virtual world; on the <strong>right</strong>, the same
+            trajectory replayed from a third-person perspective for inspection and debugging.
+          </p>
+        </div>
+        <video id="immersive-view" autoplay muted loop playsinline preload="auto" style="width:100%;">
+          <source src="./static/videos/imvr_3d_view.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Tasks. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Tasks</h2>
+        <div class="content has-text-justified">
+          <p>
+            We demonstrate <em>ImVR</em> across a diverse set of manipulation tasks spanning both
+            simulation and the real world, covering a range of robot platforms (Franka Panda,
+            UFactory XArm6 and XArm7) and end-effectors — parallel grippers, sticks, and
+            multi-fingered dexterous hands including the Allegro, Ability, and Inspire hands.
+            Use the selectors below to browse the task videos recorded with each robot setup.
+          </p>
         </div>
       </div>
-    </div> -->
-    <section class="columns is-centered has-text-centered">
-      <div class="container is-max-desktop">
-        <h2 class="title is-4">Placing Human in 3D Virtual World</h2>
-        <div>
-          <video id="teaser" autoplay muted loop playsinline height="50%">
-            <source src="./static/videos/imvr_3d_view.mov" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Left: The first-person view of the operator in the 3D virtual world.
-          </br>
-            Right: The third-person view of trajectory recorded.
-        </br>
-            Our system enables adaptive viewpoints to focus on precise manipulation tasks while maintaining smooth, low-latency experience.
-          </h2>
-        </div>        
+    </div>
+
+    <!-- Simulation tasks. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4 has-text-centered">Simulation</h3>
+
+        <!-- XArm6 + Gripper -->
+        <div class="task-group">
+          <h4 class="subtitle is-5 has-text-centered">XArm6 + Gripper</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-xarm6-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-xarm6-select" class="task-selector" data-target="sim-xarm6-video">
+                  <option value="./static/sim_video/stack_cube.mp4">Stack Cube</option>
+                  <option value="./static/sim_video/assemble_kits.mp4">Assemble Kits</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-xarm6-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Panda + Gripper -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Panda + Gripper</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-panda-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-panda-select" class="task-selector" data-target="sim-panda-video">
+                  <option value="./static/sim_video/peg_insertion.mp4">Peg Insertion</option>
+                  <option value="./static/sim_video/plug_charger.mp4">Plug Charger</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-panda-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Panda + Stick -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Panda + Stick</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-panda-stick-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-panda-stick-select" class="task-selector" data-target="sim-panda-stick-video">
+                  <option value="./static/sim_video/push_t.mp4">Push T</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-panda-stick-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Floating Allegro Hand -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Floating Allegro Hand</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-allegro-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-allegro-select" class="task-selector" data-target="sim-allegro-video">
+                  <option value="./static/sim_video/rotate_cube.mp4">Rotate Cube</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-allegro-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Ability Hand -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Floating Ability Hand</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-ability-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-ability-select" class="task-selector" data-target="sim-ability-video">
+                  <option value="./static/sim_video/insert_flower.mp4">Insert Flower</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-ability-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Inspire Hand -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Floating Inspire Hand</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-inspire-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-inspire-select" class="task-selector" data-target="sim-inspire-video">
+                  <option value="./static/sim_video/pour_water.mp4">Pour Water</option>
+                  <option value="./static/sim_video/open_box.mp4">Open Box</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-inspire-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Dual XArm7 + Ability Hand -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Dual XArm7 + Ability Hand</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-dual-ability-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-dual-ability-select" class="task-selector" data-target="sim-dual-ability-video">
+                  <option value="./static/sim_video/dual_arm.mp4">Dual-Arm Manipulation</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-dual-ability-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+
+        <!-- Dual XArm7 + Gripper -->
+        <div class="task-group" style="margin-top:2.5rem;">
+          <h4 class="subtitle is-5 has-text-centered">Dual XArm7 + Gripper</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="sim-dual-gripper-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="sim-dual-gripper-select" class="task-selector" data-target="sim-dual-gripper-video">
+                  <option value="./static/sim_video/long_horizontal_dualarm_bottle_unscrew.mp4">Bottle Unscrew</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="sim-dual-gripper-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
       </div>
-    </section>
-    <!--/ Paper video. -->
+    </div>
+
+    <!-- Real-world tasks. -->
+    <div class="columns is-centered" style="margin-top:2.5rem;">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4 has-text-centered">Real World</h3>
+
+        <div class="task-group">
+          <h4 class="subtitle is-5 has-text-centered">XArm7 + Ability Hand</h4>
+          <div class="field has-addons has-addons-centered">
+            <div class="control"><label class="button is-static" for="real-xarm7-select">Task</label></div>
+            <div class="control is-expanded">
+              <div class="select is-fullwidth">
+                <select id="real-xarm7-select" class="task-selector" data-target="real-xarm7-video">
+                  <option value="./static/videos/open_box.mp4">Open Box</option>
+                  <option value="./static/videos/pour.mp4">Pour</option>
+                  <option value="./static/videos/rotate.mp4">Rotate</option>
+                  <option value="./static/videos/pick-and-insert.mp4">Pick and Insert</option>
+                  <option value="./static/videos/pick-cube.mp4">Pick Cube</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <video id="real-xarm7-video" autoplay muted loop controls playsinline preload="metadata" style="width:100%; margin-top:0.75rem;"></video>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script>
+    (function () {
+      function wireTaskSelector(selectEl) {
+        var video = document.getElementById(selectEl.dataset.target);
+        if (!video) return;
+        function setVideo() {
+          video.src = selectEl.value;
+          video.load();
+          var p = video.play();
+          if (p !== undefined) { p.catch(function () {}); }
+        }
+        selectEl.addEventListener('change', setVideo);
+        setVideo();
+      }
+      document.querySelectorAll('.task-selector').forEach(wireTaskSelector);
+    })();
+  </script>
 </section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{todo
-      <!-- park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021}, -->
+    <pre><code>@inproceedings{liuimvr,
+title={ImVR: Immersive VR Teleoperation System for General Purpose},
+  author={Liu, Yulin and He, Zihao and Xiang, Fanbo and Guo, Runlin and Huang, Zhiao and Zhang, Jialin and Ai, Bo and Tao, Stone and Su, Hao},
+  booktitle={3rd RSS Workshop on Dexterous Manipulation: Learning and Control with Diverse Data}
 }</code></pre>
   </div>
 </section>
